@@ -1,0 +1,101 @@
+Term,Clarification,Ambiguous
+PDF,Portable Document Format; a file format for document exchange, No
+PDFsam,PDF Split and Merge application, No
+JRE,Java Runtime Environment required to run PDFsam, No
+JVM,Java Virtual Machine (exec environment for Java), No
+SRS Document,Software Requirements Specification document, No
+Split,Operation to cut a PDF into parts (burst/pages/bookmarks), No
+Merge,Operation to combine multiple PDFs or page ranges, No
+Extract,Operation to pull sections/pages into a new document, No
+Alternate Mix,Plugin to take alternating pages from two PDFs, No
+Rotate,Operation to rotate pages by specified degrees, No
+Visual reorder,GUI feature to reorder/delete/rotate specific pages, No
+Visual compose,GUI feature to build a doc by dragging pages from sources, No
+Plugin,A functional module loaded into the main GUI, Yes
+GUI,Graphical User Interface of PDFsam, No
+Console,Command-line interface for batch/console jobs, No
+Basic version,Standard feature set (six plugins), Yes
+Enhanced version,Version with extra features beyond basic, Yes
+Burst split,Split into single pages, No
+Split every n pages,Split after every n pages, No
+Split even pages,Split at every even page number, No
+Split odd pages,Split at every odd page number, No
+Split by bookmark level,Split at bookmark levels (chapter-like), No
+Destination folder,Output directory for generated files, Yes
+Output options,Filename pattern and prefix variables, Yes
+[CURRENTPAGE],Prefix variable replaced with page number, No
+[TIMESTAMP],Prefix variable replaced with date/time, No
+[FILENUMBER],Prefix variable replaced with sequential file number, No
+[BASENAME],Prefix variable replaced with original filename, No
+[BOOKMARK_NAME],Prefix variable replaced with bookmark title, No
+RUN button,Control to execute selected operation, No
+Selection panel,Area where user imports/selects files, No
+Password,Password for protected PDF when required, No
+Compression,Option to compress output PDF, Yes
+Preview,Built-in Image viewer preview for selected pages, No
+Move Up/Move Down,Buttons to change order in selection list, No
+XML export,Export file list as XML for console concat command, No
+Forms,PDF forms handling option when merging, Yes
+Zoom-in/Zoom-out,Thumbnail scaling for preview, No
+Thumbnails,Small page previews created by application, No
+Default working directory,Directory used by default for saves/loads, Yes
+Default environment,Previously saved environment loaded at startup, Yes
+Save/Load environment,Feature to save or load the working environment, No
+Working environment,Full state of GUI/plugins saved/restored, Yes
+Log panel,Panel that displays log messages during ops, No
+DEBUG/INFO messages,Black log messages for normal info/debug, No
+WARNING messages,Blue log messages indicating recoverable issues, No
+ERROR/FATAL messages,Red log messages indicating unhandled errors, No
+Log level,Granularity of logs to display (OFF/INFO/DEBUG...), Yes
+Look and feel,Application theme / L&F chosen by user, Yes
+Language,Application language selection, No
+Auto update,Check for/perform software updates, No
+Embedded help,Contextual help available inside the GUI, No
+Memory usage,Maximum memory (default 254MB), Yes
+Disk space,Disk space needed (13.9MB), No
+Platform independent,Runs on any OS with a JVM, Yes
+Supported OS,Windows/Linux/Mac OS X supported, No
+JVM version requirement,Requires JVM 1.6 or higher, No
+Functional Requirements,Detailed functional requirements (REQ-#), No
+Nonfunctional Requirements,Performance/security/safety attributes, No
+Performance Requirements,Response times; system is considered real-time, Yes
+Safety Requirements,Application should not alter input files, No
+Security Requirements,No identity management; low security level, Yes
+Software Quality Attributes,Pleasant UI; user friendly; accessibility, Yes
+GNU GPL,GNU General Public License licensing for the project, No
+FOSS,Free and Open Source Software, No
+Console concat command,Console command to concatenate files, No
+Move Up/Down ordering,Change order of files in the selection table, No
+Preview Image viewer,Open selected page in the image viewer, No
+Save image,in image viewer save current preview to image, No
+Embeded help,Embedded help in the GUI, No
+Translations,Available language translations list, No
+Thumbnails creation library,Library used to create thumbnails, Yes
+Alert sounds,Option to turn alert sounds on/off, No
+Overwrite confirmation,Dialog to confirm overwrites, No
+Reverse selected pages,Function to reverse page order of selection, No
+Reverse first document,Option to reverse pages when mixing, No
+Reverse second document,Option to reverse pages when mixing, No
+Number of pages to switch document,Step size for Alternate Mix, No
+Pages option (All/Even/Odd),Rotate or select pages All/Even/Odd, No
+File imports,Import PDF files to selection table, No
+Export list as xml,Export selected files list for console use, No
+Form merging option,Whether to include PDF form fields, Yes
+Page number syntax,"Formats like ""8-15"",""17-"",""All""",No
+Unique filename pattern,Pattern ensuring unique output filenames, Yes
+Prefix variables,Variables used in filename patterns (listed), No
+FILENUMBER digit limit,Max digits allowed for FILENUMBER prefix=10, No
+Timestamp format,YYYYMMDD_HHmmssSSS for [TIMESTAMP], No
+CurrentPage digits,Number of digits formatting for [CURRENTPAGE], No
+Starting FILENUMBER,Optional start number for FILENUMBER prefix, No
+Bookmar names sanitization,Non-file-friendly chars may be stripped, Yes
+Batch jobs,Using console for server/batch jobs, No
+Server jobs,Automation/server-side use via console, No
+Recurrent jobs,Saved environment to automate recurrent tasks, Yes
+Preview scale,Zoom level for thumbnails, No
+Delete/Undelete,Permanently remove or restore pages in session, No
+Preview large files,Ability to preview large PDFs, Yes
+GUI toolbar,Main toolbar features and icons, No
+About panel,Panel with project/about information, No
+Check for updates,Network check to see if new versions exist, No
+Available translations list,Languages supported via translations.launchpad, No
